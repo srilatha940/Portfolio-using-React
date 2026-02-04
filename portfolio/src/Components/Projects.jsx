@@ -2,23 +2,25 @@ import React from "react";
 import "./Projects.css";
 import gymImage from "../assets/gym.jfif"
 import cart from "../assets/cart.jfif"
-import wavy from "../assets/wavy.jfif"
+import profile from "../assets/portfolio.png"
 const projectsData = [
   {
-    title: "Shopping Cart Using OOPS",
-    image: cart,
-    github: "https://github.com/srilatha940/Shopping_Cart",
+    title: "Portfolio Using React",
+    image: profile,
+    github: "https://portfolio-using-react-virid.vercel.app/",
   },
+  
   {
     title: "Gym Tracker Membership Project",
     image: gymImage,
     github: "https://srilatha940.github.io/Gymtracker/frontend'/index.html",
   },
   {
-    title: "Transitions Project",
-    image: wavy,
-    github: "https://github.com/srilatha940/wavy",
+    title: "Shopping Cart Using OOPS",
+    image: cart,
+    github: "https://github.com/srilatha940/Shopping_Cart",
   },
+  
 ];
 const Projects = () => {
   return (
