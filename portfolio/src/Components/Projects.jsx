@@ -9,7 +9,7 @@ const projectsData = [
     image: profile,
     github: "https://portfolio-using-react-virid.vercel.app/",
   },
-  
+
   {
     title: "Gym Tracker Membership Project",
     image: gymImage,
@@ -20,7 +20,7 @@ const projectsData = [
     image: cart,
     github: "https://github.com/srilatha940/Shopping_Cart",
   },
-  
+
 ];
 const Projects = () => {
   return (
@@ -28,28 +28,30 @@ const Projects = () => {
       <h2 className="projects-title">
         Latest <span>Projects</span>
       </h2>
-
       <div className="projects-container">
         {projectsData.map((project, index) => (
-          <div key={index} className="project-card">
+          <a
+            key={index}
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card"
+          >
             <img src={project.image} alt={project.title} />
-
             <div className="project-overlay">
               <h3>{project.title}</h3>
-              <p>Click button to view project</p>
-
-              {/* 🔥 ONLY this button opens new tab */}
-              <button
-                type="button"
+               <button
+                onClick={(e) => {
+                  e.stopPropagation(); // prevent card click
+                  window.open(project.github, "_blank", "noopener,noreferrer");
+                }}
                 className="project-btn"
-                onClick={() =>
-                  window.open(project.github, "_blank", "noopener,noreferrer")
-                }
               >
                 View Project
               </button>
+
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
