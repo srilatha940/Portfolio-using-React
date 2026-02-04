@@ -1,0 +1,63 @@
+
+/* .popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+} */
+ .popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999; /* 🔥 THIS IS CRUCIAL */
+}
+
+
+.popup-card {
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  padding: 40px 30px;
+  border-radius: 18px;
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  color: #fff;
+  animation: popIn 0.4s ease;
+}
+
+.popup-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #fff;
+  color: #7b2ff7;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-card button {
+  margin-top: 25px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: #fff;
+  color: #7b2ff7;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

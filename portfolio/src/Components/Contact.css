@@ -1,0 +1,171 @@
+.contact-section {
+  padding: 100px 80px;
+  background: transparent;
+  color: #fff;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 70px;
+}
+
+.contact-title span {
+  color: #a855f7;
+}
+
+.contact-container {
+  display: flex;
+  gap: 80px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* LEFT */
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.contact-left p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #e5e7eb;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #a855f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a855f7;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.contact-icons a:hover {
+  background: #a855f7;
+  color: #000;
+}
+
+/* RIGHT */
+.contact-right {
+  flex: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #000;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a855f7;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: #a855f7;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* =======================
+   RESPONSIVE CONTACT
+======================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 80px 40px;
+  }
+
+  .contact-container {
+    gap: 50px;
+  }
+
+  .contact-title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-left h3 {
+    font-size: 22px;
+  }
+
+  .contact-left p {
+    font-size: 15px;
+  }
+
+  .contact-info p {
+    justify-content: center;
+  }
+
+  .contact-icons {
+    justify-content: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-title {
+    font-size: 26px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}

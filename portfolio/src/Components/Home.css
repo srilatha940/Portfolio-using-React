@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #a335a3;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  font-style:italic;
+}
+
+.navbar nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  text-decoration: none;
+}
+
+/* HOME */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 140px 80px;
+}
+
+.home-text {
+  max-width: 800px;
+  margin-left: 4%;
+}
+
+.home-text h4 {
+  color: #8750ba;
+}
+
+.home-text h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.home-text h1 span {
+  color: #a855f7;
+}
+
+.home-text h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.home-text p {
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* ICONS */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #a855f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a855f7;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #a855f7;
+  color: #000;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px 30px;
+  background: #a855f7;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* IMAGE */
+.home-img img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 6px solid #a855f7;
+  margin-right: 50px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 80px;
+  background: #020617;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #a855f7;
+}
+
+
+
+.card {
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 15px;
+  width: 260px;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 20px 40px;
+  }
+
+  .home {
+    padding: 120px 40px;
+  }
+
+  .home-text {
+    max-width: 600px;
+  }
+
+  .home-img img {
+    width: 260px;
+    height: 260px;
+    margin-right: 20px;
+  }
+
+  .section {
+    padding: 80px 40px;
+  }
+
+  
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar nav a {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  /* HOME */
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 120px 20px;
+  }
+
+  .home-text {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .home-text h1 {
+    font-size: 38px;
+  }
+
+  .home-text h3 {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .home-img img {
+    width: 220px;
+    height: 220px;
+    margin: 0 0 30px 0;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 70px 20px;
+    text-align: center;
+  }
+
+  /* Prevent content hiding behind fixed navbar */
+.home,
+.section {
+  scroll-margin-top: 90px;
+}
+
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+
+
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .navbar nav a {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  .home-text h1 {
+    font-size: 32px;
+  }
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+
+  .home-img img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-text h1 {
+  font-size: clamp(28px, 5vw, 48px);
+}
+
+.section h2 {
+  font-size: clamp(24px, 4vw, 32px);
+}
