@@ -24,7 +24,7 @@ const Home = () => {
         <div className="home-text">
           <h4>Hello, It’s Me</h4>
           <h1>Neelam <span>Srilatha</span></h1>
-          <h3>Frontend Developer</h3>
+          <h3>Full Stack Developer</h3>
 
           <p>
             I am a passionate Full Stack Developer with a strong foundation in Python, SQL, HTML, CSS, JavaScript, and React.
