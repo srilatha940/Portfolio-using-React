@@ -3,6 +3,7 @@ import Contact from "./Components/Contact"
 import Home from "./Components/Home"
 import Projects from "./Components/Projects"
 import SkillsAccordion from "./Components/SkillsAccordion"
+// import SuccessPopup from "./Components/SuccessPopup"
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <SkillsAccordion></SkillsAccordion>
       <Projects></Projects>
       <Contact></Contact>
+      {/* <SuccessPopup></SuccessPopup> */}
     </>
   )
 }
