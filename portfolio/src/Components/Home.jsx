@@ -58,7 +58,7 @@ const Home = () => {
               <FaInstagram />
             </a>
 
-            <a href="mailto:m.ramesh04172@gmail.com">
+            <a href="neelam.srilatha@gmail.com">
               <FaEnvelope />
             </a>
           </div>
