@@ -13,7 +13,7 @@ const projectsData = [
   {
     title: "Gym Tracker Membership Project",
     image: gymImage,
-    github: "https://srilatha940.github.io/Gymtracker/frontend'/index.html",
+    github: "https://srilatha940.github.io/Gymtracker/frontend%27/index.html",
   },
   {
     title: "Shopping Cart Using OOPS",
@@ -30,19 +30,17 @@ const Projects = () => {
       </h2>
       <div className="projects-container">
         {projectsData.map((project, index) => (
-          <a
+          <div
             key={index}
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-card"
-          >
+            className="project-card">
+
             <img src={project.image} alt={project.title} />
             <div className="project-overlay">
               <h3>{project.title}</h3>
                <button
-                onClick={(e) => {
-                  e.stopPropagation(); // prevent card click
+                onClick={() => {
+                  // e.stopPropagation(); // prevent card click
+                
                   window.open(project.github, "_blank", "noopener,noreferrer");
                 }}
                 className="project-btn"
@@ -51,7 +49,7 @@ const Projects = () => {
               </button>
 
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>

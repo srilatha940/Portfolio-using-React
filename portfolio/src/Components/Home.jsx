@@ -27,7 +27,7 @@ const Home = () => {
           <h3>Frontend Developer</h3>
 
           <p>
-            I am a passionate Frontend Developer with a strong foundation in HTML, CSS, JavaScript, and React.
+            I am a passionate Full Stack Developer with a strong foundation in Python, SQL, HTML, CSS, JavaScript, and React.
             I enjoy building responsive, visually appealing, and user-friendly web applications that deliver
             great user experiences. With a keen eye for detail and a love for clean design, I focus on writing
             structured, maintainable, and efficient code.

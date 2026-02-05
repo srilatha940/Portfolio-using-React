@@ -10,14 +10,14 @@ const About = () => {
         </h2>
 
         <p>
-          I am a passionate and highly focused Frontend Developer with a strong
+          I am a passionate and highly focused Full Stack Developer with a strong
           foundation in modern web technologies. I am a fast learner and a quick
           grasping individual who can easily adapt to new tools, frameworks, and
           technologies.
         </p>
 
         <p>
-          I have good knowledge of HTML, CSS, JavaScript, and React, and I enjoy
+          I have good knowledge of Python, HTML, CSS, JavaScript, React and SQL, I enjoy
           building responsive, user-friendly, and visually appealing web
           applications. I am confident in understanding requirements clearly
           and transforming ideas into efficient and scalable solutions.
